@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState } from 'react';
 
-const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5002/api/tasks';
+const API_URL = import.meta.env.VITE_API_URL || '/api/tasks';
 
 const getTodayString = () => {
   const today = new Date();

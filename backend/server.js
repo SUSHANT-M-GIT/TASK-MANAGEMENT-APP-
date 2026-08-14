@@ -6,8 +6,8 @@ const app = express();
 const preferredPort = Number(process.env.PORT) || 5001;
 
 function startServer(port) {
-  app.listen(port, () => {
-    console.log(`TaskFlow backend running on http://localhost:${port}`);
+  app.listen(port, '0.0.0.0', () => {
+    console.log(`TaskFlow backend running on http://0.0.0.0:${port}`);
   }).on('error', (error) => {
     if (error.code === 'EADDRINUSE') {
       const nextPort = port + 1;
@@ -23,6 +23,10 @@ function startServer(port) {
 
 app.use(cors());
 app.use(express.json());
+
+app.get('/health', (req, res) => {
+  res.json({ status: 'ok', uptime: process.uptime() });
+});
 
 // Serve built frontend (if present)
 const frontendDist = path.join(__dirname, '..', 'frontend', 'dist');
