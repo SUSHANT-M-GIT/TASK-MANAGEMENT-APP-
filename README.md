@@ -95,10 +95,8 @@ All other routes serve the frontend (SPA fallback).
 - Responsive design
 - Past date validation (cannot create tasks with past dates)
 
-## Notes
+## NOTES 
 
-This is a **mid-level app**: it is not too basic, but it is also not too advanced. It uses the main features that a real task manager usually needs. The backend validates input and prevents past dates from being set.
-
----
-
-**Ready to use!** Clone, install, and run with the commands above.
+- **IT'S NOT THAT ADVANCED LEVEL APP BUT IT STILL HAS ALL THE FUNCTIONALITIES AND BACKEND CONNECTED WHERE DATA GETS'S STORED**
+- **ITS'S A REACT APP WHICH I HAVE BUILD AFTER LEARNING THE REACT FUNCTIONALITIES AND PRACTICING IT THROUGH YOUTUBE CHANNELS**
+- **JUST A GIVE A TRY**
